@@ -1,0 +1,891 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+
+.headerClass {
+  height: 100vh;
+  background: url(https://media.gettyimages.com/videos/water-bubble-hd-loop-1080-video-id101240003?s=640x640);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerClass > img {
+  border-radius: 50%;
+  height: 270px;
+  width: 250px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 3px rgb(171, 152, 152);
+  margin-bottom: 10px;
+  margin-top: -50px;
+}
+
+.headerClass > h1,
+.headerClass > h2 {
+  align-self: center;
+  color: #252934;
+}
+
+.headerClass > h1 > span,
+.headerClass > h2 > span {
+  color: #e54f6d;
+}
+
+/* ------------------ Nav bar Section ------------------ */
+
+.NavClass {
+  background-color: #1b242f;
+  height: 50px;
+  border-bottom: 3px solid #3d7eb5;
+  color: #d0d1d3;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+.link-wrap {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.page-link {
+  margin-top: 13px;
+  font-size: 16px;
+  margin-left: 25px;
+}
+a:hover {
+  cursor: pointer;
+  color: #c24462;
+  transition: color 0.5s;
+}
+
+/* ------------------ Experience Section ----------------- */
+
+.ExperienceClass {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  color: #444649;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+}
+
+.ExperienceClass > h1 {
+  color: #444649;
+  font-size: 30px;
+  align-self: start;
+}
+
+.ExperienceClass > hr {
+  margin-top: 20px;
+  opacity: 0.3;
+}
+
+.ExperienceClass .underline {
+  padding-left: 20px;
+}
+
+.ParentExperience {
+  display: flex;
+  flex-direction: row;
+}
+
+.ExperienceItem > div {
+  padding: 20px;
+  width: 75%;
+  padding-left: 50px;
+}
+
+.ExperienceItem > div > h3 {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.ExperienceItem > div > p > span {
+  color: #4e3232;
+  font-weight: 800;
+}
+
+.ExperienceItem > div > p {
+  padding-top: 8px;
+}
+
+/* ----------------- Skills Section ------------------- */
+
+.SkillClass {
+  height: fit-content;
+  background-color: #ffffff;
+  color: #444649;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+}
+
+.SkillClass > h1 {
+  color: #444649;
+  font-size: 30px;
+  align-self: start;
+}
+
+.SkillClass > hr {
+  margin-top: 20px;
+  opacity: 0.3;
+}
+
+.SkillClass .underline {
+  padding-left: 20px;
+}
+
+.ParentSkill {
+  margin-top: 20px;
+  display: flex;
+}
+
+.logo {
+  width: 40%;
+}
+
+.logo > img {
+  height: 400px;
+  width: auto;
+  padding-top: 60px;
+  padding-left: 20px;
+}
+
+.ItemParent {
+  width: 60%;
+  padding-top: 20px;
+}
+
+.ItemParent .Item {
+  display: flex;
+  margin-top: 10px;
+  height: 24px;
+  background-color: #eeeeee;
+}
+
+.fill {
+  background-color: #82ad87;
+}
+
+.ItemName {
+  background-color: #344748;
+  color: #d6e0d4;
+  width: 150px;
+  height: 24px;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px;
+}
+/* ----------------- Contest ----------------------- */
+
+.ContestClass {
+  height: fit-content;
+  background-color: #f5f5f5;
+  color: #444649;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+}
+
+.ContestClass > h1 {
+  color: #444649;
+  font-size: 30px;
+  align-self: start;
+}
+
+.ContestClass > hr {
+  margin-top: 20px;
+  opacity: 0.3;
+}
+
+.ContestClass .underline {
+  padding-left: 20px;
+}
+
+.ParentContest {
+  display: flex;
+  flex-direction: row;
+}
+.ContestItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+}
+
+.ContestItem > div {
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.ContestItem > div > h3 {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.ContestItem > div > p > span {
+  color: #4e3232;
+}
+
+.ContestItem > div > p {
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.ContestItem > div > p > a {
+  color: #3d7eb5;
+}
+.ContestImage {
+  width: 40%;
+}
+.ContestImage > img {
+  height: 250px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.ContestClass > h2 {
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: Lato;
+  padding-top: 5px;
+}
+
+.ContestClass > h2:nth-child(odd) {
+  margin-top: 30px;
+}
+
+.ContestClass > h2:nth-child(even) {
+  margin-bottom: 30px;
+}
+
+/* ----------------- Education ----------------------*/
+
+.EducationClass {
+  height: fit-content;
+  background-color: #ffffff;
+  color: #444649;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+}
+
+.EducationClass > h1 {
+  color: #444649;
+  font-size: 30px;
+  align-self: start;
+}
+
+.EducationClass > hr {
+  margin-top: 20px;
+  opacity: 0.3;
+}
+
+.EducationClass .underline {
+  padding-left: 20px;
+}
+
+.ParentEducation {
+  padding-left: 20px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ItemEducation > div > h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.ItemEducation > div > h5 {
+  font-size: 16px;
+}
+
+.ItemEducation > div > p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.ImageEducation > img {
+  height: 300px;
+  width: auto;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.ItemEducation span {
+  font-size: 25px;
+}
+
+/* ------------------ Project Section ------------------ */
+
+.ProjectClass {
+  height: fit-content;
+  background-color: #f5f5f5;
+  color: #444649;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+.ProjectClass > h1 {
+  color: #444649;
+  font-size: 30px;
+  align-self: start;
+}
+
+.ProjectClass > hr {
+  margin-top: 20px;
+  opacity: 0.3;
+}
+
+.ProjectClass .underline {
+  padding-left: 20px;
+}
+
+.ParentProject {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px 0px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.projectItem {
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to left, #ffffff, #ece9e6);
+  background: linear-gradient(to left, #ffffff, #ece9e6);
+  position: relative;
+  width: 330px;
+  height: 280px;
+  border-radius: 2px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 255, 0.2);
+}
+
+.projectItem:hover {
+  transition: 2s;
+  width: 315px;
+  height: 265px;
+}
+
+.projectItem > img {
+  width: 250px;
+  height: 150px;
+  border-radius: 2px;
+}
+
+.projectItem > p {
+  padding: 2px 15px;
+  font-size: 14px;
+}
+
+.projectItem > h3 {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* ------------------------ Co-curricular Activities Section --------------------- */
+
+.ExtraClass {
+  height: fit-content;
+  background-color: #ffffff;
+  color: #444649;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+}
+
+.ExtraClass > h1 {
+  color: #444649;
+  font-size: 30px;
+  align-self: start;
+}
+
+.ExtraClass > hr {
+  margin-top: 20px;
+  opacity: 0.3;
+}
+
+.ExtraClass .underline {
+  padding-left: 20px;
+}
+
+.ParentExtra {
+  display: flex;
+  flex-direction: row;
+}
+
+.ExtraItem > div {
+  padding: 20px;
+  width: 65%;
+  padding-left: 50px;
+}
+
+.ExtraItem > div > h3 {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.ExtraItem > div > p > span {
+  color: #4e3232;
+  font-weight: 800;
+}
+
+.ExtraItem > div > p {
+  padding-top: 8px;
+}
+
+/* ------------------------ Footer section --------------------*/
+
+.footerClass {
+  background-color: #252934;
+  height: 400px;
+  display: flex;
+  color: #969da9;
+  flex-direction: column;
+}
+
+.footerClass > h1 {
+  border-bottom: 2px solid #444649;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.myInput {
+  padding-top: 10px;
+}
+
+.myInput > label {
+  padding-right: 20px;
+}
+
+.myInput input {
+  height: 30px;
+  width: 300px;
+}
+
+.myInput textarea {
+  height: 100px;
+  width: 302px;
+  margin-left: -12px;
+}
+
+.submitBtn > input {
+  height: 30px;
+  width: 80px;
+  margin-left: 287px;
+  margin-top: 8px;
+  background: #252934;
+  color: aliceblue;
+  border: 2px solid #969da9;
+}
+
+.submitBtn > input:hover {
+  cursor: pointer;
+  background-color: #d6e0d4;
+  border: 2px solid #1b242f;
+  color: #000000;
+}
+
+.thankyou_message {
+  margin-top: 50px;
+  padding: 10px;
+}
+
+/* ------------------ Animation ----------------*/
+
+.headerClass h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  /* animation: typing 4s steps(40, end);
+  animation-iteration-count: infinite; */
+}
+
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+} */
+
+/*------------- For Mobile Menu--------------------*/
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  margin-top: 11px;
+}
+
+@media only screen and (max-width: 905px) {
+  .mobile-toggle {
+    display: block;
+  }
+  .link-wrap {
+    transition: 1s;
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.open-nav {
+  display: block;
+  transition: 0.8s;
+}
+
+.openMainNav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transition: 0.8s;
+}
+
+.openMainNav {
+  padding-top: 10px;
+  height: 300px;
+  transition: 0.8s;
+}
+
+/* ------------------ Media Query --------- */
+
+@media only screen and (max-width: 500px) {
+  .headerClass > h1,
+  .headerClass > h2 {
+    font-size: 16px;
+  }
+  .headerClass > img {
+    height: 240px;
+    width: 220px;
+  }
+  .ExperienceItem > div {
+    width: 100%;
+  }
+  /* @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 260px;
+    }
+  } */
+}
+@media only screen and (max-width: 905px) {
+  .ExperienceItem > div {
+    width: 90%;
+  }
+  .ItemParent {
+    width: 90%;
+  }
+  .ImageEducation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .ItemParent {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .ContestImage {
+    display: none;
+  }
+  .ContestItem {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .ParentProject {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .ContestItem {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ParentProject {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projectItem {
+    width: 250px;
+    height: 300px;
+  }
+
+  .projectItem:hover {
+    transition: none;
+    width: 250px;
+    height: 300px;
+    opacity: 1;
+  }
+
+  .projectItem > img {
+    width: 230px;
+    height: 130px;
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ParentProject {
+    grid-template-columns: 1fr;
+  }
+
+  .projectItem {
+    width: 300px;
+    height: 300px;
+  }
+
+  .projectItem:hover {
+    transition: none;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+  }
+
+  .projectItem > img {
+    width: 280px;
+    height: 160px;
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .ItemName {
+    width: 200px;
+  }
+  .ItemParent {
+    width: 20%;
+  }
+  .ItemEducation > div > h4 {
+    font-size: 16px;
+  }
+
+  .ItemEducation > div > h5 {
+    font-size: 14px;
+  }
+  .projectItem {
+    width: 250px;
+    height: 300px;
+  }
+
+  .projectItem:hover {
+    transition: none;
+    width: 250px;
+    height: 300px;
+    opacity: 1;
+  }
+
+  .projectItem > img {
+    width: 230px;
+    height: 130px;
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .projectItem {
+    width: 200px;
+    height: 300px;
+  }
+
+  .projectItem:hover {
+    transition: none;
+    width: 200px;
+    height: 300px;
+    opacity: 1;
+  }
+
+  .projectItem > img {
+    width: 180px;
+    height: 130px;
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .ContestItem {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ExtraItem > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .myInput input {
+    width: 180px;
+  }
+
+  .myInput textarea {
+    height: 100px;
+    width: 182px;
+  }
+
+  .submitBtn > input {
+    margin-left: 165px;
+  }
+}
+
+/* ------------- Animation ---------- */
+
+.headerClass > h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.headerClass > h1 {
+  animation-duration: 3s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-right: 50%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+.headerClass > img {
+  animation-duration: 1s;
+  animation-name: slidein3;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein3 {
+  from {
+    box-shadow: 0px 0px 0px 8px rgb(100, 150, 100);
+  }
+  to {
+    box-shadow: 0px 0px 0px 4px rgb(171, 152, 152);
+  }
+}
+
+.underline {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end);
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+    color: #da0c29;
+  }
+}
+
+footer > h1 {
+  animation-duration: 3s;
+  animation-name: contactAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes contactAnimation {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.fill {
+  animation-duration: 3s;
+  animation-name: SkillAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes SkillAnimation {
+  from {
+    transform: scale(.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.ImageEducation > img {
+  animation-duration: 2s;
+  animation-name: EducationAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes EducationAnimation {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
