@@ -151,7 +151,7 @@ a:hover {
 }
 
 .logo {
-  width: 40%;
+  width: 50%;
 }
 
 .logo > img {
@@ -162,7 +162,7 @@ a:hover {
 }
 
 .ItemParent {
-  width: 60%;
+  width: 50%;
   padding-top: 20px;
 }
 
@@ -858,13 +858,13 @@ footer > h1 {
   }
 }
 
-.fill {
+/* .fill {
   animation-duration: 3s;
   animation-name: SkillAnimation;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-
+} */
+/* 
 @keyframes SkillAnimation {
   from {
     transform: scale(.2);
@@ -872,7 +872,7 @@ footer > h1 {
   to {
     transform: scale(1);
   }
-}
+} */
 
 .ImageEducation > img {
   animation-duration: 2s;
