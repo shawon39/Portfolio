@@ -155,7 +155,7 @@ a:hover {
 }
 
 .logo > img {
-  height: 400px;
+  height: 350px;
   width: auto;
   padding-top: 60px;
   padding-left: 20px;
@@ -247,8 +247,8 @@ a:hover {
   width: 40%;
 }
 .ContestImage > img {
-  height: 250px;
-  width: auto;
+  height: 280px;
+  width: 410px;
   display: block;
   margin: 0 auto;
 }
