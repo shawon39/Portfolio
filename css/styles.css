@@ -123,7 +123,7 @@ section{padding:clamp(64px,9vw,116px) 0}
 .pillar p{font-size:13.5px; color:var(--ink-faint); margin-top:3px}
 
 /* ---------- projects ---------- */
-.cards{display:grid; grid-template-columns:repeat(2,1fr); gap:24px}
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:24px}
 .card{display:flex; flex-direction:column; padding:30px; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow); transition:transform .26s var(--ease), box-shadow .26s var(--ease), border-color .26s; position:relative; overflow:hidden}
 .card::after{content:""; position:absolute; left:0; top:0; height:3px; width:0; background:var(--accent); transition:width .35s var(--ease)}
 .card:hover{transform:translateY(-5px); box-shadow:var(--shadow-lift); border-color:#d9d9d1}
@@ -207,7 +207,8 @@ html.js [data-reveal].in{opacity:1; transform:none}
   .avatar-stage{order:-1; max-width:340px; margin:0 auto}
   .about-grid{grid-template-columns:1fr; gap:36px}
   .cert-wrap{grid-template-columns:1fr; gap:24px}
-  .cards,.ach-grid,.skill-grid{grid-template-columns:1fr}
+  .ach-grid,.skill-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
   .cert-grid{grid-template-columns:repeat(2,1fr)}
   .stats{grid-template-columns:1fr 1fr}
   .stat:nth-child(2){border-right:none}
@@ -226,6 +227,7 @@ html.js [data-reveal].in{opacity:1; transform:none}
 @media (max-width:560px){
   .wrap{padding:0 20px}
   .cert-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
   .hero{padding-top:120px}
   .ach{padding:26px; gap:16px}
   .float-chip.tl{left:0} .float-chip.br{right:0}
